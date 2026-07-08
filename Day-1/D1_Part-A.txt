@@ -1,0 +1,61 @@
+1. Difference between software and hardware (with two examples each)
+Hardware is the physical part of a computer that we can see and touch, while software is a set of instructions that tells the hardware what to do. Hardware cannot work properly without software, and software also needs hardware to run.
+Examples of Hardware: Keyboard, Monitor
+Examples of Software: Windows, Google Chrome
+
+2. Difference between the Internet and the World Wide Web (using an analogy)
+The Internet is the worldwide network that connects computers, while the World Wide Web is a collection of websites that runs on that network.
+Analogy: Think of the Internet as a city's road network and the Web as the buses and cars traveling on those roads. Without roads, the vehicles cannot move.
+
+3. Request–Response Cycle and the five players
+The request–response cycle begins when a user requests a webpage. The browser sends the request through the Internet to a server. If needed, the server gets information from the database and sends a response back to the browser, which displays the webpage.
+Five players:
+User
+Browser
+Internet
+Server
+Database
+
+4. Frontend vs Backend (two responsibilities each)
+Frontend: The part of the application that users see and interact with.
+Responsibilities:
+Designing the user interface.
+Making the website responsive and interactive.
+Backend: The hidden part that handles data and application logic.
+Responsibilities:
+Processing requests and business logic.
+Managing databases and security.
+
+5. HTML, CSS and JavaScript using the house analogy
+HTML is the structure of the house (walls, doors and rooms).
+CSS is the decoration (paint, furniture and colors).
+JavaScript is the electricity and smart devices that make the house interactive. Together they create a complete website.
+
+6. What is an API? Explain with another real-world example
+An API (Application Programming Interface) is a set of rules that allows different software applications to communicate with each other.
+Example: In an online payment app, when you pay using UPI, the shopping app sends your payment request through a payment API to the bank. The bank verifies the transaction and sends the result back to the app. The API acts as the communication bridge between the app and the bank.
+
+7. Native vs Cross-platform development
+Native app development means creating separate apps for Android and iOS using their own programming languages. It provides the best performance but requires more time and cost. Cross-platform development allows developers to write one codebase that runs on both Android and iOS. It saves development time, reduces cost, and still offers near-native performance.
+
+8. Three advantages and two limitations of Flutter
+Advantages:
+Single codebase for multiple platforms.
+Hot Reload for faster development.
+Beautiful UI with near-native performance.
+Limitations:
+Larger application size.
+Dart is less commonly used than languages like JavaScript.
+
+9. Difference between Git and GitHub
+Git is a version control tool installed on a computer that tracks changes in code. GitHub is an online platform that stores Git repositories, making it easy to back up code, collaborate with others, and showcase projects.
+
+10. Seven stages of SDLC
+Idea/Requirement Analysis
+Planning
+Design (UI/UX)
+Development
+Testing
+Deployment
+Maintenance
+

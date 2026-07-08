@@ -1,0 +1,18 @@
+1. Research one famous app not covered in Section 14. Write a short paragraph mapping its frontend, backend, and database roles.
+Example: Spotify
+Spotify's frontend is the mobile app and website where users search for songs, create playlists, and control music playback. The backend processes user requests, manages accounts, recommends songs, and streams music. The database stores user profiles, playlists, listening history, and song information. All three components work together to provide a smooth music streaming experience.
+
+2. Research the meaning of the HTTP status codes 200, 404, and 500. Write one sentence explaining each.
+200 OK: The request was successful, and the server returned the requested content.
+404 Not Found: The requested webpage or resource could not be found on the server.
+500 Internal Server Error: The server encountered an unexpected error and could not complete the request.
+
+3. Find out what "responsive design" means and write two sentences explaining why it matters for modern websites.
+Responsive design is a web design approach that makes websites automatically adjust their layout and content to fit different screen sizes, such as mobiles, tablets, and desktops. It is important because it provides a better user experience and ensures websites are easy to use on any device.
+
+4. Look up one company or app built with Flutter (other than Google Pay) and note what it does.
+BMW App
+The BMW app is built using Flutter. It allows BMW owners to lock or unlock their vehicles remotely, check the vehicle's status, locate their car, and access other smart vehicle features from their smartphones.
+
+5. Write a short paragraph (5–6 sentences) on why you personally want to learn web and mobile development.
+I want to learn web and mobile development because I enjoy creating useful applications that solve real-world problems. These skills will help me build innovative websites and mobile apps for people. I also want to improve my technical knowledge and become a skilled software developer. Learning development will increase my career opportunities and help me secure a good job in the IT industry. In the future, I hope to build my own projects and contribute to meaningful software solutions.

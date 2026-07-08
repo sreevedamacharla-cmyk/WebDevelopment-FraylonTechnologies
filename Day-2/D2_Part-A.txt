@@ -1,0 +1,79 @@
+1. Explain the full form of HTML and what each word means.
+HTML stands for HyperText Markup Language. HyperText means text containing links to other pages. Markup means using tags to define the structure of content. Language means a standard set of rules that browsers understand.
+
+2. Why is HTML called a markup language and not a programming language?
+HTML is a markup language because it structures and organizes content using tags. It cannot perform calculations, make decisions, or execute logic like programming languages such as JavaScript or Python.
+
+3. Describe the difference between the <head> and <body> sections.
+The <head> contains metadata such as the page title, character encoding, and links to CSS or JavaScript. The <body> contains all the visible content, including headings, paragraphs, images, forms, and tables.
+
+4. Explain the difference between a tag, an element, and an attribute, with an example of each.
+
+A tag is written inside angle brackets, such as <p>.
+An element consists of the opening tag, content, and closing tag, for example: <p>Hello</p>.
+An attribute provides extra information about an element, for example: <img src="photo.jpg" alt="Profile Photo">, where src and alt are attributes.
+
+5. What is the difference between id and class? When would you use each?
+An id uniquely identifies a single element and should appear only once on a page. A class can be shared by multiple elements. Use id for unique elements and class to style or group similar elements.
+
+6. Why are the alt attribute and the <label> element important for accessibility?
+The alt attribute describes an image for screen readers and appears if the image cannot load. The <label> element clearly identifies form fields, making forms easier to use for everyone, especially screen reader users.
+
+7. Explain the difference between <strong>/<em> and <b>/<i>.
+<strong> and <em> provide semantic meaning, indicating importance and emphasis. <b> and <i> only change the appearance of text without adding meaning.
+
+8. What is semantic HTML and why does it matter for SEO and accessibility?
+Semantic HTML uses meaningful elements such as <header>, <nav>, <main>, and <footer>. It helps search engines understand the page better and improves accessibility for assistive technologies.
+
+9. Explain the security risk of target="_blank" and how to prevent it.
+Opening links with target="_blank" can expose the original page to tabnabbing attacks. To prevent this, always add rel="noopener noreferrer".
+
+10. List four qualities of professional, industry-standard HTML.
+
+Clean and well-organized code.
+Accessible to all users.
+SEO-friendly with semantic elements.
+Easy to maintain and update.
+Part C – Mini Project
+
+Part D
+
+
+1. Research three HTML5 form input types not covered in detail today.
+
+a) range
+Creates a slider that allows users to select a value within a range.
+Example:
+<input type="range" min="0" max="100">
+b) color
+Opens a color picker so users can choose a color.
+Example:
+<input type="color">
+c) time
+Allows users to select a time using a browser-provided time picker.
+Example:
+<input type="time">
+
+2. What are the W3C and the WHATWG?
+W3C (World Wide Web Consortium): An international organization that develops web standards to ensure the web is accessible and consistent across browsers.
+WHATWG (Web Hypertext Application Technology Working Group): A community that develops and maintains the HTML Living Standard, continuously improving HTML and related web technologies.
+
+3. Summarize three WCAG accessibility recommendations.
+Provide descriptive alternative text (alt) for images.
+Ensure sufficient color contrast between text and background for readability.
+Make websites keyboard accessible so users can navigate without a mouse.
+
+4. Find a real website and identify three semantic HTML elements it uses.
+Website: Google
+Semantic elements commonly used:
+<header> – Contains the top navigation and branding.
+<main> – Holds the primary page content.
+<footer> – Displays links such as Privacy, Terms, and Settings.
+
+5. Difference between block-level and inline elements.
+Block-level Elements: Start on a new line and take up the full available width	
+Inline Elements: Start on a new line and takes up only as much width needed.
+Examples:
+Block-level: <div>, <p>
+Inline: <span>, <a>
+

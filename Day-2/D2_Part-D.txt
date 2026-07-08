@@ -1,0 +1,37 @@
+1. Research three HTML5 form input types not covered in detail today.
+a) range
+Creates a slider that allows users to select a value within a range.
+Example:
+<input type="range" min="0" max="100">
+b) color
+Opens a color picker so users can choose a color.
+Example:
+<input type="color">
+c) time
+Allows users to select a time using a browser-provided time picker.
+Example:
+<input type="time">
+
+2. What are the W3C and the WHATWG?
+W3C (World Wide Web Consortium): An international organization that develops web standards to ensure the web is accessible and consistent across browsers.
+WHATWG (Web Hypertext Application Technology Working Group): A community that develops and maintains the HTML Living Standard, continuously improving HTML and related web technologies.
+
+3. Summarize three WCAG accessibility recommendations.
+Provide descriptive alternative text (alt) for images.
+Ensure sufficient color contrast between text and background for readability.
+Make websites keyboard accessible so users can navigate without a mouse.
+
+4. Find a real website and identify three semantic HTML elements it uses.
+Website: Google
+Semantic elements commonly used:
+<header> – Contains the top navigation and branding.
+<main> – Holds the primary page content.
+<footer> – Displays links such as Privacy, Terms, and Settings.
+
+5. Difference between block-level and inline elements.
+Block-level Elements: Start on a new line and take up the full available width	
+Inline Elements: Start on a new line and takes up only as much width needed.
+Examples:
+Block-level: <div>, <p>
+Inline: <span>, <a>
+
