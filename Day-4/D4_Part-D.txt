@@ -1,0 +1,25 @@
+Part D – Research Activities
+
+1. Arrow functions are a shorter way to write functions in JavaScript. They use the `=>` symbol and make the code cleaner.
+
+Example:
+
+```javascript
+function square(x) {
+    return x * x;
+}
+
+const squareArrow = x => x * x;
+```
+
+2. The DOM is a tree-like structure of an HTML page. JavaScript uses it to access elements, change content, update styles, and respond to user actions like clicks.
+
+3. Three useful array methods are:
+* `includes()` – Checks if an item exists in an array.
+* `indexOf()` – Returns the position of an item in an array.
+* `slice()` – Creates a copy of part of an array without changing the original.
+
+4. Var hoisting:The variable declaration is moved to the top of the scope and initialized with undefined, allowing access before declaration.
+   Let hoisting: The variable declaration is moved to the top of the blocl scope but remains uninitialized, so it cannot be accessed before declaration.
+
+5.Temporal Dead Zone is the time period between the start of a block scope and the moment the variable is declared and initialized. During this period, variables declared with let and const exist but cannot be accessed.

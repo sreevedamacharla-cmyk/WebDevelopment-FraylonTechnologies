@@ -1,0 +1,30 @@
+Part A – Theory Questions
+
+1. JavaScript is a programming language that makes web pages interactive. HTML creates the structure, CSS adds the design, and JavaScript controls the behavior.
+
+2. `var` is function-scoped and can be redeclared and reassigned. `let` is block-scoped and can be reassigned but not redeclared. `const` is block-scoped and cannot be reassigned or redeclared.
+
+3. The seven primitive data types are:
+
+* String – "Hello"
+* Number – 25
+* Boolean – true
+* Undefined – `let x;`
+* Null – `let y = null;`
+* BigInt – `123456789n`
+* Symbol – `Symbol("id")`
+
+4. The DOM (Document Object Model) is the structure of an HTML page. JavaScript uses the DOM to access and change elements, styles, and content without reloading the page.
+
+5. Implicit type conversion happens automatically, like `"10" + 5` giving `"105"`. Explicit conversion is done by the programmer using functions like `Number("10")`.
+
+6. NaN means "Not a Number". It occurs when an invalid mathematical operation is performed, such as `"abc" * 2`. It can be checked using `isNaN()`.
+
+7. `==` compares only values and converts data types if needed. `===` compares both value and data type without conversion.
+
+8. A template literal uses backticks (` `) and `${}` to insert variables into strings. It is easier to read and write than using the `+` operator.
+
+9. An array stores a list of values using indexes. An object stores data as key-value pairs. Arrays are used for lists, while objects are used to represent details of a single item.
+
+10. The three types of errors are syntax errors, runtime errors, and logical errors. Syntax errors are fixed by correcting code, runtime errors by checking the console, and logical errors by testing the program step by step.
+
