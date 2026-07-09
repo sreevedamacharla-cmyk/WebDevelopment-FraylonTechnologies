@@ -1,0 +1,153 @@
+/* universal selector */
+* {
+  padding: 0;
+}
+
+/* element selector */
+h1 {
+  text-decoration: underline;
+}
+
+/*class selector*/
+.box1 {
+  background-color: rgb(206, 187, 187);
+}
+
+/* id selector */
+#nav {
+  font-style: italic;
+}
+
+/* group selector */
+h1,
+h2 {
+  color: rgb(176, 86, 176);
+}
+
+/* descendant selector */
+nav li {
+  background-color: rgb(160, 128, 189);
+}
+
+/* adjacent sibling */
+h1 + p {
+  background-color: bisque;
+}
+
+/* general sibling */
+h2 ~ p {
+  margin-left: 30px;
+}
+
+/* child selector */
+a > li {
+  margin-top: 30px;
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  padding: 20px;
+  margin: 20px;
+  background-color: blanchedalmond;
+}
+
+.border-box {
+  box-sizing: border-box;
+}
+
+.content-box {
+  box-sizing: content-box;
+}
+
+.block-elem {
+  display: block;
+  background: yellow;
+}
+
+.inline-elem {
+  display: inline;
+  background-color: yellow;
+}
+
+.inline-block {
+  display: inline-block;
+  background-color: yellow;
+  width: 200px;
+}
+
+/*Static */
+.static {
+  position: static;
+}
+
+/* 2. Relative */
+.relative {
+  position: relative;
+  background-color: lightgreen;
+}
+
+/* Absolute badge inside relative parent */
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: red;
+  color: white;
+}
+
+/* 3. Absolute */
+.absolute {
+  position: absolute;
+  top: 2500px;
+  left: 300px;
+  background-color: lightcoral;
+}
+
+/* 4. Fixed */
+.fixed {
+  position: fixed;
+  top: 150px;
+  right: 10px;
+  background-color: gold;
+}
+
+/* 5. Sticky */
+.sticky {
+  position: sticky;
+  top: 0;
+  background-color: orange;
+}
+
+.color {
+  width: 150px;
+  height: 60px;
+  color: white;
+  text-align: center;
+  line-height: 60px;
+  margin: 15px;
+  font-weight: bold;
+}
+
+/* Same Color */
+
+.named {
+  background-color: blue;
+}
+
+.hex {
+  background-color: #0000ff;
+}
+
+.rgb {
+  background-color: rgb(0, 0, 255);
+}
+
+.hsl {
+  background-color: hsl(240, 100%, 50%);
+}
+
+.rgba {
+  background-color: rgba(0, 0, 255, 0.5);
+}

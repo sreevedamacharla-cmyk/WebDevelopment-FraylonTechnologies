@@ -1,0 +1,23 @@
+Part A – Theory Questions
+
+1. CSS stands for Cascading Style Sheets. Cascading means that when more than one style applies to an element, CSS follows a priority order to decide which style is used.
+
+2. CSS can be added in three ways: Inline CSS, Internal CSS, and External CSS. External CSS is preferred because it keeps HTML clean, makes code easier to manage, and allows one stylesheet to be used for multiple pages.
+
+3. In the rule `h1 { color: blue; font-size: 2rem; }`, `h1` is the selector. `color` and `font-size` are properties. `blue` and `2rem` are values. Everything inside the curly braces is called the declaration block, and each property-value pair is a declaration.
+
+4. The CSS box model consists of Content, Padding, Border, and Margin. By default, the total size of an element is the content size plus its padding and border. Margins add extra space outside the element.
+
+5. `box-sizing: border-box` includes padding and border inside the given width and height. It is widely used because it makes layouts easier to manage.
+
+6. Padding is the space inside the border around the content. Margin is the space outside the border between elements. Margin collapsing happens when two vertical margins touch and only the larger margin is used.
+
+7. Block elements start on a new line and take full width. Inline elements stay on the same line and only take the space they need. Inline-block elements stay on the same line but also allow width and height to be set.
+
+8. Static is the default position. Relative moves an element from its normal position. Absolute positions an element relative to its parent. Fixed stays in the same place while scrolling. Sticky behaves normally until scrolling reaches a certain point, then it sticks.
+
+9. CSS specificity decides which style is applied when there are conflicts. The order is: Universal selector, Element selector, Class selector, ID selector, Inline style, and `!important`.
+
+10. Responsive design makes websites look good on all screen sizes. Mobile-first starts with small screens and adds styles for larger screens, while Desktop-first starts with large screens and adjusts for smaller ones.
+
+

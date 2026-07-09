@@ -1,0 +1,16 @@
+Part D – Research Activities
+
+1. CSS variables are reusable values like colors and font sizes. They make code easier to maintain because you can update a value in one place instead of changing it everywhere.
+
+2. BEM stands for Block, Element, and Modifier. It is a naming method that keeps CSS organized. Example: `.card__title--large`.
+
+3. `:focus` styles an element when it is selected. `:first-child` selects the first child element. `:nth-child()` selects elements based on their position.
+
+4. Flexbox is a CSS layout system used to arrange items in rows or columns. Three common properties are `display: flex`, `flex-direction`, and `justify-content`.
+
+5. Example from a website:
+
+* `font-family` sets the font style.
+* `color` sets the text color.
+* `margin-bottom` adds space below the element.
+  These styles usually come from the website's external CSS file or the browser's default stylesheet.

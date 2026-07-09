@@ -1,0 +1,47 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(185, 193, 202);
+  color: black;
+}
+
+nav {
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: rgba(185, 193, 202, 0.605);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+#profile {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 2px solid gray;
+}
+
+.img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  height: 30px;
+  width: 70px;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: gray;
+}
