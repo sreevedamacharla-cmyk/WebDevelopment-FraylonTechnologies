@@ -1,0 +1,46 @@
+Part E — Research Activities
+
+-
+1. Explain localStorage
+localStorage is a browser feature used to store data permanently as key-value pairs. The data remains even after closing or refreshing the browser until it is manually removed.
+Example:
+localStorage.setItem("name","Veda");
+let name=localStorage.getItem("name");
+
+2. ES6 Class Syntax
+Classes are a simpler way to create objects in JavaScript.
+Example:
+class Student{
+ constructor(name){
+  this.name=name;
+ }
+ display(){
+  console.log(this.name);
+ }
+}
+let s1=new Student("Veda");
+s1.display();
+
+3. Promises and async/await
+Promises and async/await are used to handle asynchronous operations like API calls. They make asynchronous code easier to read and manage.
+Example:
+async function getData(){
+ let response=await fetch(url);
+}
+
+4. Event Bubbling and Capturing
+Event bubbling means an event moves from the target element upward to its parent elements.
+Event capturing means the event moves from the parent element down to the target element.
+Event delegation uses bubbling by adding one event listener to a parent instead of multiple child elements.
+Example:
+parent.addEventListener("click",function(e){
+ console.log(e.target);
+});
+
+5. Observing DOM Changes using DevTools
+Example website: YouTube
+Three dynamic changes observed:
+Like button count changes after clicking like.
+Comments load without refreshing the page.
+Search suggestions appear while typing.
+These changes happen because JavaScript modifies the DOM dynamically.

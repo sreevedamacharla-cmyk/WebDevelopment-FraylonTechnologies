@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Student Dashboard</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f2f2f2;
+        margin: 20px;
+      }
+
+      .container {
+        max-width: 700px;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      input {
+        padding: 8px;
+        margin: 5px;
+        width: 45%;
+      }
+
+      button {
+        padding: 8px 15px;
+        margin: 5px;
+        cursor: pointer;
+      }
+
+      .student {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      @media (max-width: 600px) {
+        input {
+          width: 100%;
+        }
+
+        .student {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Dynamic Student Dashboard</h2>
+
+      <input type="text" id="name" placeholder="Student Name" />
+
+      <input type="number" id="course" placeholder="Course Count" />
+
+      <button onclick="addStudent()">Add Student</button>
+
+      <br /><br />
+
+      <input type="text" id="search" placeholder="Search Student" />
+
+      <div id="students"></div>
+    </div>
+
+    <script>
+      let students = JSON.parse(localStorage.getItem("students")) || [];
+
+      function saveData() {
+        localStorage.setItem("students", JSON.stringify(students));
+      }
+
+      function displayStudents(list = students) {
+        let output = "";
+
+        list.forEach((student, index) => {
+          output += `
+<div class="student">
+
+<div>
+
+<b>${student.name}</b><br>
+
+Courses : ${student.course}
+
+</div>
+
+<div>
+
+<button onclick="editStudent(${index})">Edit</button>
+
+<button onclick="deleteStudent(${index})">Delete</button>
+
+</div>
+
+</div>
+`;
+        });
+
+        document.getElementById("students").innerHTML = output;
+
+        saveData();
+      }
+
+      function addStudent() {
+        let name = document.getElementById("name").value;
+
+        let course = document.getElementById("course").value;
+
+        if (name == "" || course == "") {
+          alert("Fill all fields");
+
+          return;
+        }
+
+        students.push({
+          name: name,
+
+          course: course,
+        });
+
+        document.getElementById("name").value = "";
+
+        document.getElementById("course").value = "";
+
+        displayStudents();
+      }
+
+      function editStudent(index) {
+        let newName = prompt("Enter new name", students[index].name);
+
+        let newCourse = prompt("Enter course count", students[index].course);
+
+        if (newName && newCourse) {
+          students[index].name = newName;
+
+          students[index].course = newCourse;
+
+          displayStudents();
+        }
+      }
+
+      function deleteStudent(index) {
+        students.splice(index, 1);
+
+        displayStudents();
+      }
+
+      document.getElementById("search").addEventListener("input", function () {
+        let text = this.value.toLowerCase();
+
+        let filtered = students.filter((student) =>
+          student.name.toLowerCase().includes(text),
+        );
+
+        displayStudents(filtered);
+      });
+
+      displayStudents();
+    </script>
+  </body>
+</html>

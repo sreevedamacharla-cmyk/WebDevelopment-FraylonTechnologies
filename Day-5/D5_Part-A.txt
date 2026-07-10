@@ -1,0 +1,42 @@
+Part A — Theory Questions
+
+
+1. What is ES6 and why was it introduced?
+ES6 (ECMAScript 2015) is a newer version of JavaScript that added features to make coding easier and cleaner. It introduced features like let, const, arrow functions, classes, and promises.
+
+2. Difference between let, const, and var with TDZ.
+var is function-scoped and can be updated and redeclared.
+let is block-scoped and can be updated but not redeclared.
+const is block-scoped and cannot be changed after assignment.
+Temporal Dead Zone (TDZ) is the time before a let or const variable is declared where accessing it gives an error.
+
+3. What are arrow functions? How is this different?
+Arrow functions are a shorter way to write functions in JavaScript. Unlike regular functions, arrow functions do not have their own this; they use this from the surrounding code.
+
+4. Difference between rest and spread operators.
+Rest (...) collects multiple values into an array.
+Spread (...) expands an array or object into individual values.
+
+5. Explain destructuring.
+Destructuring allows us to easily extract values from arrays and objects.
+Example:
+let [a,b] = [10,20];
+let {name} = student;
+
+6. What is DOM?
+DOM (Document Object Model) represents an HTML page as a tree of objects. The browser creates it by reading HTML, and JavaScript uses it to change webpage content and styles.
+
+7. Difference between textContent, innerText, and innerHTML.
+textContent → gets all text.
+innerText → gets visible text only.
+innerHTML → gets or changes HTML content.
+innerHTML can be unsafe if it contains user input because it may cause XSS attacks.
+
+8. Difference between getElementById and querySelector.
+getElementById() selects an element using its ID, while querySelector() selects elements using CSS selectors.
+
+9. Why use addEventListener instead of onclick?
+addEventListener() is better because it keeps JavaScript separate from HTML and allows multiple events on the same element.
+
+10. What does preventDefault() do?
+preventDefault() stops the browser's default action. For example, it prevents a form from submitting until validation is completed.
