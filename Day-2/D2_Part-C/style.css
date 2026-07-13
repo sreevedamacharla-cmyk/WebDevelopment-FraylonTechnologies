@@ -1,47 +1,137 @@
+,
 * {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(185, 193, 202);
-  color: black;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+  font-family: Arial, sans-serif;
+
+  line-height: 1.6;
+}
+
+header {
+  background: #222;
+
+  padding: 15px;
 }
 
 nav {
-  height: 10vh;
   display: flex;
-  justify-content: space-around;
+
+  justify-content: space-between;
+
   align-items: center;
-  position: sticky;
-  top: 0;
-  background-color: rgba(185, 193, 202, 0.605);
+}
+
+.logo {
+  color: white;
+}
+
+ul {
+  display: flex;
+
+  gap: 20px;
+
+  list-style: none;
 }
 
 a {
+  color: white;
+
   text-decoration: none;
 }
 
-a:hover {
+.img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.hero {
+  height: 90vh;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+
+  background: #eee;
+}
+
+button {
+  padding: 12px 25px;
+
+  border: none;
+
+  background: black;
+
+  color: white;
+
+  cursor: pointer;
+}
+
+section {
+  padding: 50px 10%;
+}
+
+.grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 20px;
+}
+
+.card {
+  padding: 25px;
+
+  background: #f4f4f4;
+
+  border-radius: 10px;
+
+  text-align: center;
+}
+
+footer {
+  background: #222;
+
+  color: white;
+
+  text-align: center;
+
+  padding: 20px;
+}
+
+#contacta,
+#resume {
+  color: black;
+}
+
+#contacta:hover,
+#resume:hover {
   text-decoration: underline;
   color: blue;
 }
 
-#profile {
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-  border: 2px solid gray;
-}
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
 
-.img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  ul {
+    flex-direction: column;
 
-button {
-  height: 30px;
-  width: 70px;
-  border-radius: 10px;
-}
+    align-items: center;
 
-button:hover {
-  background-color: gray;
+    padding: 0;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
 }

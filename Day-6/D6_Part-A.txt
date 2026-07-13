@@ -1,0 +1,48 @@
+Part A — Theory Questions
+
+1. What is Responsive Web Design and why is it necessary?
+Responsive Web Design (RWD) is a way of designing websites so they look good on all screen sizes like mobiles, tablets, and desktops. It became necessary because people use many different devices to access websites.
+
+2. Explain the viewport meta tag and each part.
+The viewport meta tag tells the browser how to display a webpage on different devices.
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+width=device-width – Sets the page width to match the device screen.
+initial-scale=1.0 – Sets the initial zoom level to 100%.
+
+3. Compare px, rem, vw, and vmin.
+px – Fixed size. Best for borders or icons.
+rem – Relative to the root font size. Best for fonts and spacing.
+vw – Relative to the viewport width. Good for responsive text or widths.
+vmin – Uses the smaller of viewport width or height. Useful for responsive elements.
+
+4. What are media queries? Difference between min-width and max-width?
+Media queries apply different CSS styles based on screen size.
+min-width – Styles apply when the screen is at least the given width.
+max-width – Styles apply when the screen is at most the given width.
+
+5. What is Mobile-First Design? Why is it the industry standard?
+Mobile-first design means designing for mobile screens first, then adding styles for larger screens. It is the industry standard because most users browse websites on mobile devices.
+
+6. Difference between Flexbox and CSS Grid.
+Flexbox is for one-dimensional layouts (row or column).
+CSS Grid is for two-dimensional layouts (rows and columns).
+Use Flexbox for navigation bars and small layouts. Use Grid for complete page layouts.
+
+7. Explain the main axis and cross axis in Flexbox.
+Main axis is the direction in which flex items are arranged.
+Cross axis is perpendicular to the main axis.
+For flex-direction: row, the main axis is horizontal and the cross axis is vertical.
+
+8. Explain the fr unit and repeat(auto-fit, minmax()).
+fr means "fraction" of available space.
+repeat(auto-fit, minmax(250px, 1fr)) automatically creates responsive columns that are at least 250px wide and grow equally to fill the available space.
+
+9. What is grid-template-areas? Why is it useful?
+grid-template-areas lets you name sections of a grid like header, sidebar, and footer. It makes the layout easier to read, manage, and modify.
+
+10. Five common responsive design mistakes and how to avoid them.
+Using fixed widths → Use flexible units like %, rem, or fr.
+Forgetting the viewport meta tag → Always include it.
+Not testing on mobile → Test on different screen sizes.
+Images overflowing → Use max-width: 100%.
+Ignoring media queries → Add responsive breakpoints for different devices.

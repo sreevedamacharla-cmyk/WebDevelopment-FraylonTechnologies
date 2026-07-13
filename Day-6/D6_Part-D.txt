@@ -1,0 +1,98 @@
+
+1. Difference between auto-fit and auto-fill in CSS Grid
+Both auto-fit and auto-fill are used with repeat() to create responsive grid layouts.
+auto-fit
+It fits as many columns as possible and stretches the existing items to fill the available space.
+Empty columns are removed.
+Example:
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+}
+If there is extra space, existing cards become wider.
+auto-fill
+It creates as many columns as possible even if some columns remain empty.
+The grid keeps the empty spaces.
+Example:
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+}
+
+2. CSS clamp() and Fluid Typography
+clamp() allows a value to change smoothly between a minimum and maximum size.
+Syntax:
+font-size:clamp(minimum, preferred, maximum);
+Example:
+h1{
+font-size:clamp(2rem,5vw,5rem);
+}
+Meaning:
+Minimum size → 2rem
+Preferred scaling → 5vw
+Maximum size → 5rem
+Advantages:
+Text automatically adjusts according to screen size.
+Reduces the need for many media queries.
+Makes websites more responsive.
+
+3. Bootstrap Grid System
+Bootstrap is a popular CSS framework that provides a responsive grid system.
+It uses:
+12-column layout
+Rows and columns
+Breakpoints for different devices
+Example:
+<div class="row">
+<div class="col-md-6">
+Column 1
+</div>
+<div class="col-md-6">
+Column 2
+</div>
+</div>
+Here:
+col-md-6 means each column takes 6 out of 12 columns on medium screens.
+On smaller screens, columns automatically stack.
+Bootstrap breakpoints:
+Class	Device
+col-sm	Small devices
+col-md	Tablets
+col-lg	Laptops
+col-xl	Large screens
+
+4. CSS aspect-ratio
+aspect-ratio controls the width-to-height ratio of an element.
+Example:
+img{
+width:100%;
+aspect-ratio:16/9;
+object-fit:cover;
+}
+Benefits:
+Keeps images and videos in the correct shape.
+Prevents layout shifting while loading.
+Makes media elements responsive.
+Common ratios:
+Video → 16/9
+Square images → 1/1
+Portrait images → 3/4
+
+5. Container Queries vs Media Queries
+Media Queries
+Media queries apply styles based on the screen size.
+Example:
+@media(max-width:600px){
+.card{
+width:100%;
+}
+}
+They respond to the browser window.
+Container Queries
+Container queries apply styles based on the size of a parent container.
+Example:
+@container(max-width:500px){
+.card{
+font-size:14px;
+}
+}
